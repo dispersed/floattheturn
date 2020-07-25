@@ -15,6 +15,11 @@
     var suiter = '2';
     var offsuiter = '6';
 
+    var grid = document.getElementById('grid');
+    var nextcell = grid.parentElement.nextSibling;
+    grid.parentElement.parentElement.removeChild(nextcell);
+    grid.parentElement.parentElement.parentElement.insertRow(1).appendChild(nextcell);
+    
     document.getElementById('cell_AA').setAttribute('colspan',suiter);
     // Vaikka taskupareja 6 komboja, suitedeja 4 ja offsuitteja 12
     // Pocket pairs
